@@ -7,16 +7,26 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MacRobert.ResultPattern" Version="1.0.10" />
+    <PackageReference Include="MacRobert.Reflection" Version="1.0.7" />
+    <PackageReference Include="MacRobert.EntityFrameworkCore" Version="1.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.*" />
   </ItemGroup>
+
+  <ItemGroup Condition="'$(Configuration)'=='Debug'">
+    <ProjectReference Include="..\MacRobert.ValueObjects\MacRobert.ValueObjects.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(Configuration)'=='Release'">
+    <PackageReference Include="MacRobert.ValueObjects" Version="1.0.11" />
+  </ItemGroup>  
 
   <PropertyGroup>
     <!-- Specific NuGet properties -->
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageId>MacRobert.ValueObject</PackageId>
+    <PackageId>MacRobert.EntityFrameworkCore.ValueObjects</PackageId>
     <PackageDescription>Utilities for Value Objects</PackageDescription>
     <PackageProjectUrl>https://github.com/macrobert-com/ValueObjects</PackageProjectUrl>
-  </PropertyGroup>  
+  </PropertyGroup>
 
   <PropertyGroup>
     <!-- Generic NuGet properties -->
@@ -27,7 +37,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="../../../icon.png" Pack="true" PackagePath="\"/>
-  </ItemGroup>  
-
+    <None Include="../../../icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+  
 </Project>

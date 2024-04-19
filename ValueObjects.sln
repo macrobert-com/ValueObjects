@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{85AC78EC-8427-4CAF-BCF8-26C13FBD2689}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MacRobert.ValueObjects", "src\ValueObjects\MacRobert.ValueObjects.csproj", "{A6BA1B99-8BD5-48CC-8BAF-3128EF41D649}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MacRobert.ValueObjects", "src\MacRobert.ValueObjects\MacRobert.ValueObjects.csproj", "{A6BA1B99-8BD5-48CC-8BAF-3128EF41D649}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{35BDF3F6-21C5-4CBB-9ED0-046848FA96C0}"
 	ProjectSection(SolutionItems) = preProject
@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacRobert.EntityFrameworkCore.ValueObjects", "src\MacRobert.EntityFrameworkCore.ValueObjects\MacRobert.EntityFrameworkCore.ValueObjects.csproj", "{DF1F3C72-574B-4CB9-9328-61F7F8D092AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,11 +26,19 @@ Global
 		{A6BA1B99-8BD5-48CC-8BAF-3128EF41D649}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6BA1B99-8BD5-48CC-8BAF-3128EF41D649}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6BA1B99-8BD5-48CC-8BAF-3128EF41D649}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF1F3C72-574B-4CB9-9328-61F7F8D092AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF1F3C72-574B-4CB9-9328-61F7F8D092AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF1F3C72-574B-4CB9-9328-61F7F8D092AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF1F3C72-574B-4CB9-9328-61F7F8D092AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A6BA1B99-8BD5-48CC-8BAF-3128EF41D649} = {85AC78EC-8427-4CAF-BCF8-26C13FBD2689}
+		{DF1F3C72-574B-4CB9-9328-61F7F8D092AB} = {85AC78EC-8427-4CAF-BCF8-26C13FBD2689}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B19F17AF-3A59-4137-ACD1-44B9003784DA}
 	EndGlobalSection
 EndGlobal
