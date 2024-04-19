@@ -1,6 +1,6 @@
 ﻿namespace MacRobert.ValueObjects;
 
-public interface ISimpleValueObject
+public interface ISimpleValueObject<T>
 {
     public T Value { get; }
 }
