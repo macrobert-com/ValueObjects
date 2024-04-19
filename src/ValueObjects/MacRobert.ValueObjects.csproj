@@ -10,4 +10,24 @@
     <PackageReference Include="MacRobert.ResultPattern" Version="1.0.10" />
   </ItemGroup>
 
+  <PropertyGroup>
+    <!-- Specific NuGet properties -->
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>MacRobert.ValueObject</PackageId>
+    <PackageDescription>Utilities for Value Objects</PackageDescription>
+    <PackageProjectUrl>https://github.com/macrobert-com/ValueObjects</PackageProjectUrl>
+  </PropertyGroup>  
+
+  <PropertyGroup>
+    <!-- Generic NuGet properties -->
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>icon.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../../icon.png" Pack="true" PackagePath="\"/>
+  </ItemGroup>  
+
 </Project>
