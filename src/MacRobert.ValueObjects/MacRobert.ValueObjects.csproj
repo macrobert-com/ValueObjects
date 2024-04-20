@@ -7,12 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MacRobert.ResultPattern" Version="1.0.10" />
+    <PackageReference Include="MacRobert.ResultPattern" Version="$(Version)" />
   </ItemGroup>
 
   <PropertyGroup>
     <!-- Specific NuGet properties -->
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>MacRobert.ValueObjects</PackageId>
     <PackageDescription>Utilities for Value Objects</PackageDescription>
     <PackageProjectUrl>https://github.com/macrobert-com/ValueObjects</PackageProjectUrl>
